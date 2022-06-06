@@ -1,6 +1,6 @@
 var token = getCookie("token")
 const tracksContainer = document.createElement("div")
-const authURI = "https://accounts.spotify.com/en/authorize?response_type=token&client_id=a33b8f86908448cc9d546d74711e20e0&scope=playlist-read-private%20playlist-modify-private%20app-remote-control&redirect_uri="+document.location.href+"%2Ftoken%2Ehtml%3Fnoredirect%3Dtrue"
+const authURI = "https://accounts.spotify.com/en/authorize?response_type=token&client_id=a33b8f86908448cc9d546d74711e20e0&scope=playlist-read-private%20playlist-modify-private%20app-remote-control&redirect_uri="+document.URL.replace(".html","")+"token%2Ehtml%3Fnoredirect%3Dtrue"
 var playpoolTracks;
 var playpool;
 var playing;
